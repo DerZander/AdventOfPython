@@ -22,9 +22,3 @@ class AdventOfCoder:
 
     def setup(self):
         self.session.cookies.set("session", os.getenv('SESSION_COOKIE'))
-
-
-
-if __name__ == "__main__":
-    aoc = AdventOfCoder()
-    aoc.get_day(2015, 1)
