@@ -10,7 +10,7 @@ class Solution(BaseSolution):
         self.floor = 0
 
     def solve_test(self):
-        for char in self.test_input_data:
+        for char in self.input_test_data:
             self.find_floor(char)
         self.answer_test = self.floor
         self.floor = 0

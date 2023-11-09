@@ -1,5 +1,6 @@
 import os
 import shutil
+from datetime import date
 
 import requests
 from dotenv import load_dotenv
@@ -12,7 +13,14 @@ class AdventOfCoder:
         self.session = requests.Session()
         self.setup()
 
-    def get_day(self, year, day):
+    def get_day(self, year=None, day=None):
+        if year == None:
+            year = int(input("Year: "))
+            if year < 2015 or year > date.today().year:
+                year = 2015
+        if day == None:
+            day = int(input("Day: "))
+
         path = f"{os.getcwd()}/src/years/year{year}/day{day:02d}"
         shutil.copytree(f"{os.getcwd()}/src/years/year0000/day00", path, dirs_exist_ok=True)
 

@@ -9,7 +9,7 @@ class Solution(BaseSolution):
         self.answer_two = None
 
     def solve_test(self):
-        for line in self.test_input_data.splitlines():
+        for line in self.input_test_data.splitlines():
             l, w, h = line.split("x")
             l, w, h = int(l), int(w), int(h)
             wrap_ribbon = 2 * min(l + w, w + h, h + l)

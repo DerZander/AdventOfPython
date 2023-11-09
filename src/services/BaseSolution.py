@@ -1,7 +1,7 @@
 class BaseSolution:
     def __init__(self):
         self.answer_test = None
-        self.test_input_data = None
+        self.input_test_data = None
         self.answer_one = None
         self.answer_two = None
         self.input_data = None
@@ -10,7 +10,7 @@ class BaseSolution:
 
     def get_test_input(self):
         with(open("test_input.txt", "r")) as f:
-            self.test_input_data = f.read()
+            self.input_test_data = f.read()
 
     def solve_test(self):
         pass
@@ -43,8 +43,13 @@ class BaseSolution:
     def solve(self):
         self.solve_test()
         self.get_test_answer()
+        self.setup()
         self.solve_one()
-        self.solve_two()
         self.get_answer_one()
+        self.setup()
+        self.solve_two()
         self.get_answer_two()
         self.print_answers()
+
+    def setup(self):
+        pass
