@@ -1,0 +1,3 @@
+Test answer: 000001dbbfa3a5c83a2d506429c7b00e
+Solution one: 405262
+Solution two: 9958218
