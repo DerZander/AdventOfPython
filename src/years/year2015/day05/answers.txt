@@ -1,0 +1,3 @@
+Test answer: 2
+Solution one: 255
+Solution two: 55
