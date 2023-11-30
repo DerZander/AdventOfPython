@@ -1,0 +1,3 @@
+Test answer: 
+Solution one: 377891
+Solution two: 14110788
