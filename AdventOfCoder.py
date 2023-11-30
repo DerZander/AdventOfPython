@@ -23,7 +23,6 @@ class AdventOfCoder:
 
         path = f"{os.getcwd()}/src/years/year{year}/day{day:02d}"
         shutil.copytree(f"{os.getcwd()}/src/years/year0000/day00", path, dirs_exist_ok=True)
-        replaced_content = ""
         with (open(f"{path}/solution.py", "r")) as f:
             content = f.read()
         content = content.replace("# https://adventofcode.com/0000/day/00", f"# https://adventofcode.com/{year}/day/{day}")
