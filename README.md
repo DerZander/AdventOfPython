@@ -43,6 +43,186 @@
 | 24  | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2015/day24/solution.py)  | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2016/day24/solution.py) | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day24/solution.py) | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day24/solution.py) | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day24/solution.py) | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day24/solution.py) | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day24/solution.py) | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day24/solution.py) |
 | 25  | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2015/day25/solution.py)  | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2016/day25/solution.py) | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day25/solution.py) | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day25/solution.py) | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day25/solution.py) | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day25/solution.py) | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day25/solution.py) | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day25/solution.py) |
 
+## Year 2022
+
+| Day | Name                                                             | Check                                                                                                                        |
+|-----|------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| 1   | [Calorie Counting](https://adventofcode.com/2022/day/1)          | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day01/solution.py) |
+| 2   | [Rock Paper Scissors](https://adventofcode.com/2022/day/2)       | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day02/solution.py) |
+| 3   | [Rucksack Reorganization](https://adventofcode.com/2022/day/3)   | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day03/solution.py) |
+| 4   | [Camp Cleanup](https://adventofcode.com/2022/day/4)              | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day04/solution.py) |
+| 5   | [Supply Stacks](https://adventofcode.com/2022/day/5)             | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day05/solution.py) |
+| 06  | [Tuning Trouble](https://adventofcode.com/2022/day/6)            | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day06/solution.py) |
+| 07  | [No Space Left On Device](https://adventofcode.com/2022/day/7)   | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day07/solution.py) |
+| 08  | [Treetop Tree House](https://adventofcode.com/2022/day/8)        | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day08/solution.py) |
+| 09  | [Rope Bridge](https://adventofcode.com/2022/day/9)               | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day09/solution.py) |
+| 10  | [Cathode-Ray Tube](https://adventofcode.com/2022/day/10)         | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day10/solution.py) |
+| 11  | [Monkey in the Middle](https://adventofcode.com/2022/day/11)     | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day11/solution.py) |
+| 12  | [Hill Climbing Algorithm](https://adventofcode.com/2022/day/12)  | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day12/solution.py) |
+| 13  | [Distress Signal](https://adventofcode.com/2022/day/13)          | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day13/solution.py) |
+| 14  | [Regolith Reservoir](https://adventofcode.com/2022/day/14)       | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day14/solution.py) |
+| 15  | [Beacon Exclusion Zone](https://adventofcode.com/2022/day/15)    | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day15/solution.py) |
+| 16  | [Proboscidea Volcanium](https://adventofcode.com/2022/day/16)    | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day16/solution.py) |
+| 17  | [Pyroclastic Flow](https://adventofcode.com/2022/day/17)         | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day17/solution.py) |
+| 18  | [Boiling Boulders](https://adventofcode.com/2022/day/18)         | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day18/solution.py) |
+| 19  | [Not Enough Minerals](https://adventofcode.com/2022/day/19)      | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day19/solution.py) |
+| 20  | [Grove Positioning System](https://adventofcode.com/2022/day/20) | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day20/solution.py) |
+| 21  | [Monkey Math](https://adventofcode.com/2022/day/21)              | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day21/solution.py) |
+| 22  | [Monkey Map](https://adventofcode.com/2022/day/22)               | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day22/solution.py) |
+| 23  | [Unstable Diffusion](https://adventofcode.com/2022/day/23)       | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day23/solution.py) |
+| 24  | [Blizzard Basin](https://adventofcode.com/2022/day/24)           | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day24/solution.py) |
+| 25  | [Full of Hot Air](https://adventofcode.com/2022/day/25)          | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2022/day25/solution.py) |
+
+### Year 2021
+
+| Day | Name                                                            | Check                                                                                                                        |
+|-----|-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| 1   | [Sonar Sweep](https://adventofcode.com/2021/day/1)              | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day01/solution.py) |
+| 2   | [Dive!](https://adventofcode.com/2021/day/2)                    | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day02/solution.py) |
+| 3   | [Binary Diagnostic](https://adventofcode.com/2021/day/3)        | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day03/solution.py) |
+| 4   | [Giant Squid](https://adventofcode.com/2021/day/4)              | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day04/solution.py) |
+| 5   | [Hydrothermal Venture](https://adventofcode.com/2021/day/5)     | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day05/solution.py) |
+| 6   | [Lanternfish](https://adventofcode.com/2021/day/6)              | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day06/solution.py) |
+| 7   | [The Treachery of Whales](https://adventofcode.com/2021/day/7)  | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day07/solution.py) |
+| 8   | [Seven Segment Search](https://adventofcode.com/2021/day/8)     | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day08/solution.py) |
+| 9   | [Smoke Basin](https://adventofcode.com/2021/day/9)              | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day09/solution.py) |
+| 10  | [Syntax Scoring](https://adventofcode.com/2021/day/10)          | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day10/solution.py) |
+| 11  | [Dumbo Octopus](https://adventofcode.com/2021/day/11)           | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day11/solution.py) |
+| 12  | [Passage Pathing](https://adventofcode.com/2021/day/12)         | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day12/solution.py) |
+| 13  | [Transparent Origami](https://adventofcode.com/2021/day/13)     | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day13/solution.py) |
+| 14  | [Docking Data](https://adventofcode.com/2021/day/14)            | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day14/solution.py) |
+| 15  | [Extended Polymerization](https://adventofcode.com/2021/day/15) | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day15/solution.py) |
+| 16  | [Packet Decoder](https://adventofcode.com/2021/day/16)          | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day16/solution.py) |
+| 17  | [Trick Shot](https://adventofcode.com/2021/day/17)              | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day17/solution.py) |
+| 18  | [Snailfish](https://adventofcode.com/2021/day/18)               | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day18/solution.py) |
+| 19  | [Beacon Scanner](https://adventofcode.com/2021/day/19)          | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day19/solution.py) |
+| 20  | [Trench Map](https://adventofcode.com/2021/day/20)              | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day20/solution.py) |
+| 21  | [Dirac Dice](https://adventofcode.com/2021/day/21)              | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day21/solution.py) |
+| 22  | [Reactor Reboot](https://adventofcode.com/2021/day/22)          | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day22/solution.py) |
+| 23  | [Amphipod](https://adventofcode.com/2021/day/23)                | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day23/solution.py) |
+| 24  | [Arithmetic Logic Unit](https://adventofcode.com/2021/day/24)   | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day24/solution.py) |
+| 25  | [Sea Cucumber](https://adventofcode.com/2021/day/25)            | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2021/day25/solution.py) |
+
+### Year 2020
+
+| Day | Name                                                            | Check                                                                                                                        |
+|-----|-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| 1   | [Report Repair](https://adventofcode.com/2020/day/1)            | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day01/solution.py) |
+| 2   | [Password Philosophy](https://adventofcode.com/2020/day/2)      | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day02/solution.py) |
+| 3   | [Toboggan Trajectory](https://adventofcode.com/2020/day/3)      | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day03/solution.py) |
+| 4   | [Passport Processing](https://adventofcode.com/2020/day/4)      | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day04/solution.py) |
+| 5   | [Binary Boarding](https://adventofcode.com/2020/day/5)          | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day05/solution.py) |
+| 6   | [Custom Customs](https://adventofcode.com/2020/day/6)           | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day06/solution.py) |
+| 7   | [Handy Haversacks](https://adventofcode.com/2020/day/7)         | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day07/solution.py) |
+| 8   | [Handheld Halting](https://adventofcode.com/2020/day/8)         | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day08/solution.py) |
+| 9   | [Encoding Error](https://adventofcode.com/2020/day/9)           | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day09/solution.py) |
+| 10  | [Adapter Array](https://adventofcode.com/2020/day/10)           | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day10/solution.py) |
+| 11  | [Seating System](https://adventofcode.com/2020/day/11)          | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day11/solution.py) |
+| 12  | [Rain Risk](https://adventofcode.com/2020/day/12)               | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day12/solution.py) |
+| 13  | [Shuttle Search](https://adventofcode.com/2020/day/13)          | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day13/solution.py) |
+| 14  | [Docking Data](https://adventofcode.com/2020/day/14)            | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day14/solution.py) |
+| 15  | [Rambunctious Recitation](https://adventofcode.com/2020/day/15) | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day15/solution.py) |
+| 16  | [Ticket Translation](https://adventofcode.com/2020/day/16)      | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day16/solution.py) |
+| 17  | [Conway Cubes](https://adventofcode.com/2020/day/17)            | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day17/solution.py) |
+| 18  | [Operation Order](https://adventofcode.com/2020/day/18)         | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day18/solution.py) |
+| 19  | [Monster Messages](https://adventofcode.com/2020/day/19)        | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day19/solution.py) |
+| 20  | [Jurassic Jigsaw](https://adventofcode.com/2020/day/20)         | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day20/solution.py) |
+| 21  | [Allergen Assessment](https://adventofcode.com/2020/day/21)     | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day21/solution.py) |
+| 22  | [Crab Combat](https://adventofcode.com/2020/day/22)             | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day22/solution.py) |
+| 23  | [Crab Cups](https://adventofcode.com/2020/day/23)               | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day23/solution.py) |
+| 24  | [Lobby Layout](https://adventofcode.com/2020/day/24)            | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day24/solution.py) |
+| 25  | [Combo Breaker](https://adventofcode.com/2020/day/25)           | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2020/day25/solution.py) |
+
+### Year 2019
+
+| Day | Name                                                                      | Check                                                                                                                        |
+|-----|---------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| 1   | [The Tyranny of the Rocket Equation](https://adventofcode.com/2019/day/1) | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day01/solution.py) |
+| 2   | [1202 Program Alarm](https://adventofcode.com/2019/day/2)                 | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day02/solution.py) |
+| 3   | [Crossed Wires](https://adventofcode.com/2019/day/3)                      | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day03/solution.py) |
+| 4   | [Secure Container](https://adventofcode.com/2019/day/4)                   | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day04/solution.py) |
+| 5   | [Sunny with a Chance of Asteroids](https://adventofcode.com/2019/day/5)   | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day05/solution.py) |
+| 6   | [Universal Orbit Map](https://adventofcode.com/2019/day/6)                | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day06/solution.py) |
+| 7   | [Amplification Circuit](https://adventofcode.com/2019/day/7)              | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day07/solution.py) |
+| 8   | [Space Image Format](https://adventofcode.com/2019/day/8)                 | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day08/solution.py) |
+| 9   | [Sensor Boost](https://adventofcode.com/2019/day/9)                       | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day09/solution.py) |
+| 10  | [Monitoring Station](https://adventofcode.com/2019/day/10)                | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day10/solution.py) |
+| 11  | [Space Police](https://adventofcode.com/2019/day/11)                      | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day11/solution.py) |
+| 12  | [The N-Body Problem](https://adventofcode.com/2019/day/12)                | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day12/solution.py) |
+| 13  | [Care Package](https://adventofcode.com/2019/day/13)                      | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day13/solution.py) |
+| 14  | [Space Stoichiometry](https://adventofcode.com/2019/day/14)               | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day14/solution.py) |
+| 15  | [Oxygen System](https://adventofcode.com/2019/day/15)                     | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day15/solution.py) |
+| 16  | [Flawed Frequency Transmission](https://adventofcode.com/2019/day/16)     | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day16/solution.py) |
+| 17  | [Set and Forget](https://adventofcode.com/2019/day/17)                    | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day17/solution.py) |
+| 18  | [Many-Worlds Interpretation](https://adventofcode.com/2019/day/18)        | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day18/solution.py) |
+| 19  | [Tractor Beam](https://adventofcode.com/2019/day/19)                      | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day19/solution.py) |
+| 20  | [Donut Maze](https://adventofcode.com/2019/day/20)                        | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day20/solution.py) |
+| 21  | [Springdroid Adventure](https://adventofcode.com/2019/day/21)             | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day21/solution.py) |
+| 22  | [Slam Shuffle](https://adventofcode.com/2019/day/22)                      | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day22/solution.py) |
+| 23  | [Category Six](https://adventofcode.com/2019/day/23)                      | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day23/solution.py) |
+| 24  | [Planet of Discord](https://adventofcode.com/2019/day/24)                 | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day24/solution.py) |
+| 25  | [Cryostasis](https://adventofcode.com/2019/day/25)                        | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2019/day25/solution.py) |
+
+### Year 2018
+
+| Day | Name                                                                         | Check                                                                                                                        |
+|-----|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| 1   | [Chronal Calibration](https://adventofcode.com/2018/day/1)                   | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day01/solution.py) |
+| 2   | [Inventory Management System](https://adventofcode.com/2018/day/2)           | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day02/solution.py) |
+| 3   | [No Matter How You Slice It](https://adventofcode.com/2018/day/3)            | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day03/solution.py) |
+| 4   | [Repose Record](https://adventofcode.com/2018/day/4)                         | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day04/solution.py) |
+| 5   | [Alchemical Reduction](https://adventofcode.com/2018/day/5)                  | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day05/solution.py) |
+| 6   | [Chronal Coordinates](https://adventofcode.com/2018/day/6)                   | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day06/solution.py) |
+| 7   | [The Sum of Its Parts](https://adventofcode.com/2018/day/7)                  | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day07/solution.py) |
+| 8   | [Memory Maneuver](https://adventofcode.com/2018/day/8)                       | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day08/solution.py) |
+| 9   | [Marble Mania](https://adventofcode.com/2018/day/9)                          | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day09/solution.py) |
+| 10  | [The Stars Align](https://adventofcode.com/2018/day/10)                      | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day10/solution.py) |
+| 11  | [Chronal Charge](https://adventofcode.com/2018/day/11)                       | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day11/solution.py) |
+| 12  | [Subterranean Sustainability](https://adventofcode.com/2018/day/12)          | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day12/solution.py) |
+| 13  | [Mine Cart Madness](https://adventofcode.com/2018/day/13)                    | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day13/solution.py) |
+| 14  | [Chocolate Charts](https://adventofcode.com/2018/day/14)                     | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day14/solution.py) |
+| 15  | [Beverage Bandits](https://adventofcode.com/2018/day/15)                     | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day15/solution.py) |
+| 16  | [Chronal Classification](https://adventofcode.com/2018/day/16)               | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day16/solution.py) |
+| 17  | [Reservoir Research](https://adventofcode.com/2018/day/17)                   | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day17/solution.py) |
+| 18  | [Settlers of The North Pole](https://adventofcode.com/2018/day/18)           | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day18/solution.py) |
+| 19  | [Go With The Flow](https://adventofcode.com/2018/day/19)                     | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day19/solution.py) |
+| 20  | [A Regular Map](https://adventofcode.com/2018/day/20)                        | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day20/solution.py) |
+| 21  | [Chronal Conversion](https://adventofcode.com/2018/day/21)                   | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day21/solution.py) |
+| 22  | [Mode Maze](https://adventofcode.com/2018/day/22)                            | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day22/solution.py) |
+| 23  | [Experimental Emergency Teleportation](https://adventofcode.com/2018/day/23) | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day23/solution.py) |
+| 24  | [Immune System Simulator 20XX](https://adventofcode.com/2018/day/24)         | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day24/solution.py) |
+| 25  | [Four-Dimensional Adventure](https://adventofcode.com/2018/day/25)           | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2018/day25/solution.py) |
+
+### Year 2017
+
+| Day | Name                                                                           | Check                                                                                                                        |
+|-----|--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| 1   | [Inverse Captcha](https://adventofcode.com/2017/day/1)                         | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day01/solution.py) |
+| 2   | [Corruption Checksum](https://adventofcode.com/2017/day/2)                     | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day02/solution.py) |
+| 3   | [Spiral Memory](https://adventofcode.com/2017/day/3)                           | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day03/solution.py) |
+| 4   | [High-Entropy Passphrases](https://adventofcode.com/2017/day/4)                | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day04/solution.py) |
+| 5   | [A Maze of Twisty Trampolines, All Alike](https://adventofcode.com/2017/day/5) | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day05/solution.py) |
+| 6   | [Memory Reallocation](https://adventofcode.com/2017/day/6)                     | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day06/solution.py) |
+| 7   | [Recursive Circus](https://adventofcode.com/2017/day/7)                        | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day07/solution.py) |
+| 8   | [I Heard You Like Registers](https://adventofcode.com/2017/day/8)              | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day08/solution.py) |
+| 9   | [Stream Processing](https://adventofcode.com/2017/day/9)                       | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day09/solution.py) |
+| 10  | [Knot Hash](https://adventofcode.com/2017/day/10)                              | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day10/solution.py) |
+| 11  | [Hex Ed](https://adventofcode.com/2017/day/11)                                 | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day11/solution.py) |
+| 12  | [Digital Plumber](https://adventofcode.com/2017/day/12)                        | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day12/solution.py) |
+| 13  | [Packet Scanners](https://adventofcode.com/2017/day/13)                        | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day13/solution.py) |
+| 14  | [Disk Defragmentation](https://adventofcode.com/2017/day/14)                   | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day14/solution.py) |
+| 15  | [Dueling Generators](https://adventofcode.com/2017/day/15)                     | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day15/solution.py) |
+| 16  | [Permutation Promenade](https://adventofcode.com/2017/day/16)                  | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day16/solution.py) |
+| 17  | [Spinlock](https://adventofcode.com/2017/day/17)                               | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day17/solution.py) |
+| 18  | [Duet](https://adventofcode.com/2017/day/18)                                   | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day18/solution.py) |
+| 19  | [A Series of Tubes](https://adventofcode.com/2017/day/19)                      | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day19/solution.py) |
+| 20  | [Particle Swarm](https://adventofcode.com/2017/day/20)                         | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day20/solution.py) |
+| 21  | [Fractal Art](https://adventofcode.com/2017/day/21)                            | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day21/solution.py) |
+| 22  | [Sporifica Virus](https://adventofcode.com/2017/day/22)                        | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day22/solution.py) |
+| 23  | [Coprocessor Conflagration](https://adventofcode.com/2017/day/23)              | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day23/solution.py) |
+| 24  | [Electromagnetic Moat](https://adventofcode.com/2017/day/24)                   | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day24/solution.py) |
+| 25  | [The Halting Problem](https://adventofcode.com/2017/day/25)                    | [❌](https://github.alm.europe.cloudcenter.corp/n428907/AdventOfPython/tree/development/src/years/year2017/day25/solution.py) |
+
 ### Year 2016
 
 | Day | Name                                                                           | Check                                                                                                                        |
