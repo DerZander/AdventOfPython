@@ -40,15 +40,18 @@ class BaseSolution:
             f.write(f"Solution one: {self.answer_one}\n")
             f.write(f"Solution two: {self.answer_two}\n")
 
-    def solve(self):
-        self.solve_test()
-        self.get_test_answer()
-        self.setup()
-        self.solve_one()
-        self.get_answer_one()
-        self.setup()
-        self.solve_two()
-        self.get_answer_two()
+    def solve(self, skip=None):
+        if not skip >= 0:
+            self.solve_test()
+            self.get_test_answer()
+        if not skip >= 1:
+            self.setup()
+            self.solve_one()
+            self.get_answer_one()
+        if not skip >= 2:
+            self.setup()
+            self.solve_two()
+            self.get_answer_two()
         self.print_answers()
 
     def setup(self):
