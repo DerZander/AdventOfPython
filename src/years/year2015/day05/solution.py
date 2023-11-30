@@ -1,6 +1,8 @@
 from src.services.BaseSolution import BaseSolution
 
 
+# https://adventofcode.com/2015/day/6
+
 class Solution(BaseSolution):
     def __init__(self):
         super().__init__()
@@ -29,10 +31,9 @@ class Solution(BaseSolution):
             if self.check_double_pair(line) and self.check_letter_between(line):
                 self.answer_two += 1
 
-
     def check_special_chars(self, word):
         if not ("ab" in word or "cd" in word or "pq" in word or "xy" in word):
-             return True
+            return True
         return False
 
     def check_double_letters(self, word):
@@ -51,7 +52,7 @@ class Solution(BaseSolution):
 
     def check_double_pair(self, line):
         for i in range(0, len(line) - 1):
-            if line.count(line[i:i+2]) > 1:
+            if line.count(line[i:i + 2]) > 1:
                 return True
         return False
 

@@ -1,6 +1,8 @@
 from src.services.BaseSolution import BaseSolution
 
 
+# https://adventofcode.com/2015/day/6
+
 class Solution(BaseSolution):
     def __init__(self):
         super().__init__()
@@ -31,7 +33,7 @@ class Solution(BaseSolution):
 
     def solve_two(self):
         current_position = (0, 0)
-        robo_position = (0,0)
+        robo_position = (0, 0)
         self.grid[current_position] = self.grid.get(current_position, 0) + 1
         self.grid[robo_position] = self.grid.get(robo_position, 0) + 1
         current_santa = True
@@ -56,7 +58,6 @@ class Solution(BaseSolution):
             '<': (-1, 0)
         }
         return dir[direction]
-
 
 
 if __name__ == "__main__":

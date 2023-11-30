@@ -1,6 +1,9 @@
-from src.services.BaseSolution import BaseSolution
 import hashlib
 
+from src.services.BaseSolution import BaseSolution
+
+
+# https://adventofcode.com/2015/day/6
 
 class Solution(BaseSolution):
     def __init__(self):
@@ -22,7 +25,6 @@ class Solution(BaseSolution):
             result = hashlib.md5(hashkey.encode()).hexdigest()
             if result[0] == "0" and result[1] == "0" and result[2] == "0" and result[3] == "0" and result[4] == "0":
                 self.answer_one = i
-
 
     def solve_two(self):
         key = "iwrupvqb"

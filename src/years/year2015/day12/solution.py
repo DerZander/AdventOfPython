@@ -1,6 +1,8 @@
 from src.services.BaseSolution import BaseSolution
 
 
+# https://adventofcode.com/2015/day/12
+
 class Solution(BaseSolution):
     def __init__(self):
         super().__init__()

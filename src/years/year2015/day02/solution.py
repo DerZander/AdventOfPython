@@ -1,6 +1,8 @@
 from src.services.BaseSolution import BaseSolution
 
 
+# https://adventofcode.com/2015/day/6
+
 class Solution(BaseSolution):
     def __init__(self):
         super().__init__()
@@ -40,6 +42,7 @@ class Solution(BaseSolution):
             bow_ribbon = l * w * h
             ribbon_for_line = bow_ribbon + wrap_ribbon
             self.answer_two += ribbon_for_line
+
 
 if __name__ == "__main__":
     solution = Solution()
