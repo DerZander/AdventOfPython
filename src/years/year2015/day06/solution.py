@@ -1,8 +1,6 @@
 from src.services.BaseSolution import BaseSolution
 
 
-# from PIL import Image, ImageColor
-
 class Solution(BaseSolution):
     def __init__(self):
         super().__init__()
@@ -57,18 +55,6 @@ class Solution(BaseSolution):
             if light[1]:
                 self.answer_one += 1
 
-    def draw_lights(self):
-        im = Image.new('1', (1000, 1000))  # create the Image of size 1 pixel
-        for i in range(0, 1000):
-            for j in range(0, 1000):
-                color = "black"
-                light = self.light_grid[(i, j)]
-                if not light:
-                    color = "white"
-                im.putpixel((i, j), ImageColor.getcolor('black', '1'))  # or whatever color you wish
-
-        im.save('simplePixel.png')  # or any image format
-
     def solve_two(self):
         with open("input.txt", "r") as f:
             total_brightness = 0
@@ -96,10 +82,6 @@ class Solution(BaseSolution):
                             self.light_grid[(x, y)] += lit
                             total_brightness += lit
 
-        # total_lits = 0
-        # for coords, lit in self.light_grid.items():
-        #     # if lit > 0 and lit is not False:
-        #     total_lits += lit
         self.answer_two = total_brightness
 
 
