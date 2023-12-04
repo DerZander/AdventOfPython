@@ -1,3 +1,3 @@
 Test answer: 2286
-Solution one: 2268
-Solution two: 63542
+Solution one: 2810
+Solution two: 69110

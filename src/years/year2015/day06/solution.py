@@ -90,5 +90,3 @@ class Solution(BaseSolution):
 if __name__ == "__main__":
     solution = Solution()
     solution.solve()
-# 13396307
-# 910570

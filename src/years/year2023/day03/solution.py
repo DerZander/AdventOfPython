@@ -13,10 +13,17 @@ class Solution(BaseSolution):
         self.part_list = []
         self.coord = [0, 0]
 
+
     def check_connections(self):
         for y in range(len(self.grid)):
             for x in range(len(self.grid[y])):
-                print(self.get_grid_value(x, y))
+                grid_value = self.get_grid_value(x, y)
+                if grid_value.isdigit():
+                    grid_value2 = self.get_grid_value(x+1, y)
+                    if grid_value2.isdigit():
+                        grid_value3 = self.get_grid_value(x+2, y)
+
+
 
     def get_grid_value(self, x, y):
         return self.grid[y][x]

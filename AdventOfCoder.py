@@ -35,3 +35,9 @@ class AdventOfCoder:
 
     def setup(self):
         self.session.cookies.set("session", os.getenv('SESSION_COOKIE'))
+
+    def get_input_data(self, year, day):
+        path = f"{os.getcwd()}/src/years/year{year}/day{day:02d}"
+        res = self.session.get(f"https://adventofcode.com/{year}/day/{day}/input", verify=False)
+        with(open(f"{path}/input.txt", "w")) as f:
+            f.write(res.text)
