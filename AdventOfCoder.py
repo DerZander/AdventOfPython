@@ -7,8 +7,9 @@ from dotenv import load_dotenv
 
 
 class AdventOfCoder:
-    def __init__(self):
+    def __init__(self, is_working=False):
         load_dotenv()
+        self.is_working = is_working
         self.current_path = os.getcwd()
         self.session = requests.Session()
         self.setup()
@@ -25,7 +26,8 @@ class AdventOfCoder:
         shutil.copytree(f"{os.getcwd()}/src/years/year0000/day00", path, dirs_exist_ok=True)
         with (open(f"{path}/solution.py", "r")) as f:
             content = f.read()
-        content = content.replace("# https://adventofcode.com/0000/day/00", f"# https://adventofcode.com/{year}/day/{day}")
+        content = content.replace("# https://adventofcode.com/0000/day/00",
+                                  f"# https://adventofcode.com/{year}/day/{day}")
         with(open(f"{path}/solution.py", "w")) as f:
             f.write(content)
 
@@ -34,7 +36,10 @@ class AdventOfCoder:
             f.write(res.text)
 
     def setup(self):
-        self.session.cookies.set("session", os.getenv('SESSION_COOKIE'))
+        if self.is_working:
+            self.session.cookies.set("session", os.getenv('SESSION_COOKIE_WORKING'))
+        else:
+            self.session.cookies.set("session", os.getenv('SESSION_COOKIE'))
 
     def get_input_data(self, year, day):
         path = f"{os.getcwd()}/src/years/year{year}/day{day:02d}"
