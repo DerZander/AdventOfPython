@@ -1,3 +1,15 @@
+def timer(func):
+    def wrap_func(*args, **kwargs):
+        import time
+        t1 = time.time()
+        result = func(*args, **kwargs)
+        t2 = time.time()
+        print(f'Function {func.__name__!r} executed in {(t2 - t1):.4f}s')
+        return result
+
+    return wrap_func
+
+
 class BaseSolution:
     def __init__(self):
         self.answer_test = None
@@ -24,9 +36,11 @@ class BaseSolution:
     def get_answer_two(self):
         print(f"Solution two: {self.answer_two}")
 
+    @timer
     def solve_one(self):
         pass
 
+    @timer
     def solve_two(self):
         pass
 
@@ -40,10 +54,13 @@ class BaseSolution:
             f.write(f"Solution one: {self.answer_one}\n")
             f.write(f"Solution two: {self.answer_two}\n")
 
+    def run_test(self):
+        self.solve_test()
+        self.get_test_answer()
+
     def solve(self, skip=None):
         if skip is None or not skip >= 0:
-            self.solve_test()
-            self.get_test_answer()
+            self.run_test()
         if skip is None or not skip >= 1:
             self.setup()
             self.solve_one()
