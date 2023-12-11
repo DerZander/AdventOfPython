@@ -87,4 +87,10 @@ class BaseSolution:
         self.print_answers()
 
     def setup(self):
+        if self.current_solution == SOLUTIONS.TEST:
+            self.data = self.input_test_data
+        elif self.current_solution == SOLUTIONS.ONE:
+            self.data = self.input_data
+        elif self.current_solution == SOLUTIONS.TWO:
+            self.data = self.input_data
         pass
