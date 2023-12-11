@@ -1,4 +1,4 @@
-from src.services.BaseSolution import BaseSolution, timer
+from src.services.BaseSolution import BaseSolution, timer, SOLUTIONS
 
 
 # https://adventofcode.com/0000/day/00
@@ -6,11 +6,18 @@ from src.services.BaseSolution import BaseSolution, timer
 class Solution(BaseSolution):
     def __init__(self):
         super().__init__()
-        self.answer_test = None
-        self.answer_one = None
-        self.answer_two = None
+        self.answer_test = 0
+        self.answer_one = 0
+        self.answer_two = 0
+        self.data = None
 
     def setup(self):
+        if self.current_solution == SOLUTIONS.TEST:
+            self.data = self.input_test_data
+        elif self.current_solution == SOLUTIONS.ONE:
+            self.data = self.input_data
+        elif self.current_solution == SOLUTIONS.TWO:
+            self.data = self.input_data
         pass
 
     @timer
