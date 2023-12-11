@@ -128,6 +128,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+.fastRequest
+.idea
+
 # Advent of Code
 input.txt
 answers.txt
