@@ -8,7 +8,7 @@ class Solution(BaseSolution):
         super().__init__()
         self.answer_test = 0
         self.answer_one = 0
-        self.answer_two = 0 # total of scratchcards end up
+        self.answer_two = 0  # total of scratchcards end up
         self.deck = {}
 
     def setup(self):
@@ -39,7 +39,7 @@ class Solution(BaseSolution):
                 if card["points"] < 2:
                     card["points"] += 1
                 else:
-                    card["points"] = card["points"]*2
+                    card["points"] = card["points"] * 2
         self.deck[card["id"]] = card
         return card
 
@@ -47,24 +47,16 @@ class Solution(BaseSolution):
         for line in self.input_test_data.splitlines():
             card = self.get_card(line)
 
-
         for index, card in self.deck.items():
             for amount in range(card["amount"]):
                 for draw_cards in range(card["winning_numbers_count"]):
-                    self.deck[index+draw_cards+1]["amount"] += 1
-
+                    self.deck[index + draw_cards + 1]["amount"] += 1
 
         for index, card in self.deck.items():
             print("CARD:", card)
 
         for index, card in self.deck.items():
             self.answer_test += card["amount"]
-
-
-
-        print(self.deck)
-            # print(card)
-
 
     def solve_one(self):
         for line in self.input_data.splitlines():
@@ -75,15 +67,10 @@ class Solution(BaseSolution):
         for line in self.input_data.splitlines():
             card = self.get_card(line)
 
-
         for index, card in self.deck.items():
             for amount in range(card["amount"]):
                 for draw_cards in range(card["winning_numbers_count"]):
-                    self.deck[index+draw_cards+1]["amount"] += 1
-
-
-        for index, card in self.deck.items():
-            print("CARD:", card)
+                    self.deck[index + draw_cards + 1]["amount"] += 1
 
         for index, card in self.deck.items():
             self.answer_two += card["amount"]
