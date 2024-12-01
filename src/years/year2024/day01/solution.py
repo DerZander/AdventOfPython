@@ -29,12 +29,17 @@ class Solution(BaseSolution):
     def solve_test(self):
         self.answer_test = self.compare_lists()#self.calculate_total_distance()
 
-    def compare_lists(self):
+    def get_lists(self):
         first_list, second_list = [], []
         for line in open(self.input_file, "r").readlines():
             cutted_line = line.strip().split("   ")
             first_list.append(int(cutted_line[0]))
             second_list.append(int(cutted_line[1]))
+        return first_list, second_list
+
+
+    def compare_lists(self):
+        first_list, second_list = self.get_lists()
         unique, counts = numpy.unique(second_list, return_counts=True)
         second_list_counts = dict(zip(unique, counts))
         sum = 0
@@ -44,11 +49,7 @@ class Solution(BaseSolution):
         return sum
 
     def calculate_total_distance(self):
-        first_list, second_list = [], []
-        for line in open(self.input_file, "r").readlines():
-            cutted_line = line.strip().split("   ")
-            first_list.append(int(cutted_line[0]))
-            second_list.append(int(cutted_line[1]))
+        first_list, second_list = self.get_lists()
         first_list.sort()
         second_list.sort()
         distance = 0
