@@ -1,3 +1,5 @@
+import numpy
+
 from src.services.BaseSolution import BaseSolution, timer, SOLUTIONS
 
 
@@ -25,7 +27,21 @@ class Solution(BaseSolution):
 
     @timer
     def solve_test(self):
-        self.answer_test = self.calculate_total_distance()
+        self.answer_test = self.compare_lists()#self.calculate_total_distance()
+
+    def compare_lists(self):
+        first_list, second_list = [], []
+        for line in open(self.input_file, "r").readlines():
+            cutted_line = line.strip().split("   ")
+            first_list.append(int(cutted_line[0]))
+            second_list.append(int(cutted_line[1]))
+        unique, counts = numpy.unique(second_list, return_counts=True)
+        second_list_counts = dict(zip(unique, counts))
+        sum = 0
+        for entry in first_list:
+            if entry in second_list_counts:
+                sum += entry * second_list_counts.get(entry)
+        return sum
 
     def calculate_total_distance(self):
         first_list, second_list = [], []
@@ -55,7 +71,7 @@ class Solution(BaseSolution):
 
     @timer
     def solve_two(self):
-        self.answer_two = ""
+        self.answer_two = self.compare_lists()
 
 
 if __name__ == "__main__":
