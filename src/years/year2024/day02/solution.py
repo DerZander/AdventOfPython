@@ -30,7 +30,8 @@ class Solution(BaseSolution):
             reports.append(report)
         return reports
 
-    def check_report_is_safe(self, report):
+    @staticmethod
+    def check_report_is_safe(report):
         direction = 0
         for i,level in enumerate(report[:-1]):
             if level > report[i+1]:
@@ -51,6 +52,15 @@ class Solution(BaseSolution):
                 return False
         return True
 
+    def check_report_is_safe_tolerated(self, report):
+        if self.check_report_is_safe(report):
+            return True
+        for i in range(len(report)):
+            temp_report = report[:i] + report[i + 1:]
+            if self.check_report_is_safe(temp_report):
+                return True
+        return False
+
 
 
     @timer
@@ -58,8 +68,7 @@ class Solution(BaseSolution):
         reports = self.get_reports()
         counter = 0
         for report in reports:
-            print(report)
-            if self.check_report_is_safe(report):
+            if self.check_report_is_safe_tolerated(report):
                 counter += 1
         self.answer_test =counter
 
@@ -68,15 +77,18 @@ class Solution(BaseSolution):
         reports = self.get_reports()
         counter = 0
         for report in reports:
-            print(report)
             if self.check_report_is_safe(report):
                 counter += 1
         self.answer_one = counter
 
     @timer
     def solve_two(self):
-        self.answer_two = ""
-
+        reports = self.get_reports()
+        counter = 0
+        for report in reports:
+            if self.check_report_is_safe_tolerated(report):
+                counter += 1
+        self.answer_two = counter
 
 if __name__ == "__main__":
     solution = Solution()
