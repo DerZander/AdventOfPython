@@ -134,3 +134,9 @@ dmypy.json
 # Advent of Code
 input.txt
 answers.txt
+
+# VENV
+./venv
+/venv
+/.venv
+.venv

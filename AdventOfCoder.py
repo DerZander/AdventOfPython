@@ -8,14 +8,14 @@ from bs4 import BeautifulSoup
 
 
 class AdventOfCoder:
-    def __init__(self, is_working=False):
+    def __init__(self, is_work=False):
         """
         Initializes the AdventOfCoder class.
 
-        :param is_working: Boolean flag to determine which session cookie to use.
+        :param is_work: Boolean flag to determine which session cookie to use.
         """
         load_dotenv()
-        self.is_working = is_working
+        self.is_work = is_work
         self.current_path = os.getcwd()
         self.session = requests.Session()
         self.setup()
@@ -55,10 +55,10 @@ class AdventOfCoder:
         """
         Sets up the session with the appropriate session cookie.
         """
-        if self.is_working:
-            self.session.cookies.set("session", os.getenv('SESSION_COOKIE_WORKING'))
-        else:
+        if self.is_work:
             self.session.cookies.set("session", os.getenv('SESSION_COOKIE'))
+        else:
+            self.session.cookies.set("session", os.getenv('SESSION_COOKIE_PRIVATE'))
 
     def get_input_data(self, year, day):
         """
