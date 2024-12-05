@@ -12,7 +12,6 @@ def timer(func):
 
     return wrap_func
 
-
 class SOLUTIONS(Enum):
     TEST = 0
     ONE = 1
