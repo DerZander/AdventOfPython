@@ -1,9 +1,9 @@
+from datetime import datetime
+
 from AdventOfCoder import AdventOfCoder
 
 if __name__ == "__main__":
     aoc = AdventOfCoder()
     # for i in range(9, 26):
     #     aoc.get_day(2024, i)
-    aoc.get_day(2024, 5)
-
-
+    aoc.get_day(2024, datetime.now().date().day)
