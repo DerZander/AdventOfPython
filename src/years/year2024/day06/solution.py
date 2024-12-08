@@ -47,10 +47,10 @@ class Solution(BaseSolution):
                     self.guard["y"] = line_id
                     self.guard["direction"] = Direction(col)
                     self.guard["visited_positions"] = {}
+                    self.guard["visited_positions"][(self.guard["x"], self.guard["y"])] = 0
             self.grid.append(row)
 
     def save_position(self):
-        print(self.guard["x"], self.guard["y"])
         if self.guard["visited_positions"].get((self.guard["x"], self.guard["y"])) is None:
             self.guard["visited_positions"][(self.guard["x"], self.guard["y"])] = 0
         self.guard["visited_positions"][(self.guard["x"], self.guard["y"])] += 0
@@ -72,25 +72,25 @@ class Solution(BaseSolution):
         can_leave = False
         while not can_leave:
             if self.guard["direction"] == Direction.RIGHT:
-                if self.grid[self.guard["y"]][self.guard["x"] + 1] != "#":
+                if self.guard["x"] + 1 < len(self.grid[0]) and self.grid[self.guard["y"]][self.guard["x"] + 1] != "#":
                     self.guard["x"] += 1
                     self.save_position()
                 else:
                     self.guard["direction"] = Direction.DOWN
             elif self.guard["direction"] == Direction.DOWN:
-                if self.grid[self.guard["y"] + 1][self.guard["x"]] != "#":
+                if self.guard["y"] + 1 < len(self.grid) and self.grid[self.guard["y"] + 1][self.guard["x"]] != "#":
                     self.guard["y"] += 1
                     self.save_position()
                 else:
                     self.guard["direction"] = Direction.LEFT
             elif self.guard["direction"] == Direction.LEFT:
-                if self.grid[self.guard["y"]][self.guard["x"] - 1] != "#":
+                if self.guard["x"] - 1 >= 0 and self.grid[self.guard["y"]][self.guard["x"] - 1] != "#":
                     self.guard["x"] -= 1
                     self.save_position()
                 else:
                     self.guard["direction"] = Direction.UP
             elif self.guard["direction"] == Direction.UP:
-                if self.grid[self.guard["y"] - 1][self.guard["x"]] != "#":
+                if self.guard["y"] - 1 >= 0 and self.grid[self.guard["y"] - 1][self.guard["x"]] != "#":
                     self.guard["y"] -= 1
                     self.save_position()
                 else:
@@ -98,11 +98,24 @@ class Solution(BaseSolution):
             if self.check_can_leave():
                 can_leave = True
 
+    def find_loop_positions(self):
+        loop_positions = set()
+        for y in range(len(self.grid)):
+            for x in range(len(self.grid[0])):
+                if self.grid[y][x] == "." and (x, y) != (self.guard["x"], self.guard["y"]):
+                    original_grid = [row[:] for row in self.grid]
+                    self.grid[y][x] = "#"
+                    self.guard["visited_positions"] = {}
+                    self.move_on_ice_riddle()
+                    if len(self.guard["visited_positions"]) < len(original_grid) * len(original_grid[0]):
+                        loop_positions.add((x, y))
+                    self.grid = original_grid
+        return loop_positions
+
     @timer
     def solve_test(self):
         self.load_map()
         self.move_on_ice_riddle()
-        print(len(self.guard["visited_positions"]))
         self.answer_test = len(self.guard["visited_positions"])
 
     @timer
@@ -113,7 +126,9 @@ class Solution(BaseSolution):
 
     @timer
     def solve_two(self):
-        self.answer_two = ""
+        self.load_map()
+        loop_positions = self.find_loop_positions()
+    #     self.answer_two = len(loop_positions)
 
 
 if __name__ == "__main__":
