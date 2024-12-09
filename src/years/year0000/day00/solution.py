@@ -22,15 +22,15 @@ class Solution(BaseSolution):
 
     @timer
     def solve_test(self):
-        self.answer_test = ""
+        self.answer_test = 0
 
     @timer
     def solve_one(self):
-        self.answer_one = ""
+        self.answer_one = 0
 
     @timer
     def solve_two(self):
-        self.answer_two = ""
+        self.answer_two = 0
 
 
 if __name__ == "__main__":
