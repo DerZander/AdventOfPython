@@ -79,8 +79,6 @@ class Solution(BaseSolution):
 
     @timer
     def solve_one(self):
-        # self.generate_line()
-        # self.order_line()
         self.answer_one = 0
 
     @timer
