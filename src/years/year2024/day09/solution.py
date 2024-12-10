@@ -10,8 +10,7 @@ class Solution(BaseSolution):
         self.answer_one = 0
         self.answer_two = 0
         self.data = None
-        self.line = ""
-        self.point_counter = 0
+        self.lines = []
 
     def setup(self):
         if self.current_solution == SOLUTIONS.TEST:
@@ -22,68 +21,83 @@ class Solution(BaseSolution):
             self.data = self.input_data
         pass
 
-    @staticmethod
-    def is_odd(value):
-        return value % 2 == 0
-
     def generate_line(self):
-        line = open(self.input_file, "r").readline()
-        filesystem_string = ""
-        counter = 0
-        for i, char in enumerate(line):
-            if self.is_odd(i):
-                for _ in range(int(char)):
-                    filesystem_string += str(counter)
-                counter += 1
+        lines = [open(self.input_file, "r", encoding="utf-8").readline().strip()]
+        self.lines = [int(x) for x in list(lines[0])]
+
+    def part_one(self):
+        strip, blocks, gaps = self.get_strip_blocks_gaps()
+        free_space = strip.index(None)
+        for i in reversed(range(0, len(strip))):
+            if strip[i] is not None:
+                strip[free_space] = strip[i]
+                strip[i] = None
+                while strip[free_space] is not None:
+                    free_space += 1
+                if i - free_space <= 1:
+                    break
+        return self.sum_strip(strip)
+
+    def get_strip_blocks_gaps(self):
+        position = 0
+        strip, blocks, gaps = [], [], []
+        is_block = True
+        for i in range(len(self.lines)):
+            if is_block:
+                blocks.append((len(strip), position, self.lines[i]))
+                strip.extend([position] * self.lines[i])
+                position += 1
             else:
-                filesystem_string += "." * int(char)
+                gaps.append((self.lines[i], len(strip)))
+                strip.extend([None] * self.lines[i])
+            is_block = not is_block
+        return strip, blocks, gaps
 
-        self.line = filesystem_string
-
-    def find_latest_number(self):
-        for id, char in enumerate(reversed(self.line)):
-            if char.isdigit():
-                index = len(self.line) - id - 1
-                self.line = self.line[:index] + self.line[index + 1:]
-                self.point_counter += 1
-                return index, char
-        return None, None
-
-    def swap_chars(self, index):
-        line = self.line
-        number_id, number = self.find_latest_number()
-        line = line[:index] + number + line[index + 1:]
-        self.line = line
-
-    def order_line(self):
-        for i, char in enumerate(self.line):
-            if not char.isdigit():
-                self.swap_chars(i)
-        return self.line
-
-    def sum_all(self):
+    @staticmethod
+    def sum_strip(strip):
         result = 0
-        counter = 0
-        for i, char in enumerate(self.line):
-            if char.isdigit():
-                print(f"{counter} * {char} = {counter * int(char)}")
-                result += int(char) * counter
-                counter += 1
-        return counter
+        for (itx, val) in enumerate(strip):
+            if val is not None:
+                result += val * itx
+            else:
+                result += 0
+        return result
+
+    def part_two(self):
+        strip, blocks, gaps = self.get_strip_blocks_gaps()
+        for block in reversed(blocks):
+            (position, id, length) = block
+            for itx, (gap_length, gap_position) in enumerate(gaps):
+                if gap_position > position:
+                    break
+
+                if gap_length >= length:
+                    for l in range(length):
+                        strip[position + l] = None
+                        strip[gap_position + l] = id
+
+                    diff = gap_length - length
+                    if diff > 0:
+                        gaps[itx] = (diff, gap_position + length)
+                    else:
+                        gaps.pop(itx)
+                    break
+        return self.sum_strip(strip)
 
     @timer
     def solve_test(self):
         self.generate_line()
-        self.order_line()
-        self.answer_test = self.sum_all()
+        self.answer_test = self.part_one()
 
     @timer
     def solve_one(self):
-        self.answer_one = 0
+        self.generate_line()
+        self.answer_one = self.part_one()
 
     @timer
     def solve_two(self):
-        self.answer_two = 0
+        self.generate_line()
+        self.answer_two = self.part_two()
 
 
 if __name__ == "__main__":
