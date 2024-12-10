@@ -60,6 +60,10 @@ class BaseSolution:
     def solve_two(self):
         pass
 
+    @timer
+    def solve_both(self):
+        pass
+
     def print_answers(self):
         with(open("answers.txt", "w")) as f:
             f.write(f"Test answer: {self.answer_test}\n")
@@ -88,11 +92,18 @@ class BaseSolution:
             self.get_answer_two()
         self.print_answers()
 
+    def solve_both_answers(self):
+        self.current_solution = SOLUTIONS.ONE
+        self.input_file = "input.txt"
+        self.setup()
+        self.solve_both()
+        self.get_answer_one()
+        self.get_answer_two()
+        self.print_answers()
+
     def setup(self):
         if self.current_solution == SOLUTIONS.TEST:
             self.data = self.input_test_data
-        elif self.current_solution == SOLUTIONS.ONE:
-            self.data = self.input_data
-        elif self.current_solution == SOLUTIONS.TWO:
+        elif self.current_solution == SOLUTIONS.ONE or self.current_solution == SOLUTIONS.TWO:
             self.data = self.input_data
         pass
