@@ -21,9 +21,10 @@ class Solution(BaseSolution):
             "x": 0,
             "y": 0,
             "direction": Direction.UP,
-            "visited_positions": {}
+            "visited_positions": set()
         }
         self.grid = []
+        self.grid_size = None
         self.blockers = 0
         self.data = None
 
@@ -46,14 +47,19 @@ class Solution(BaseSolution):
                     self.guard["x"] = col_id
                     self.guard["y"] = line_id
                     self.guard["direction"] = Direction(col)
-                    self.guard["visited_positions"] = {}
-                    self.guard["visited_positions"][(self.guard["x"], self.guard["y"])] = 0
-            self.grid.append(row)
+                    # self.guard["visited_positions"] = {}
+                    # self.guard["visited_positions"][(self.guard["x"], self.guard["y"])] = 0
+
+                    self.guard["visited_positions"].add((self.guard["x"], self.guard["y"]))
+            # self.grid.append(row)
+            self.grid.append(line.strip())
+        self.grid_size = (len(self.grid[0]), len(self.grid))
 
     def save_position(self):
-        if self.guard["visited_positions"].get((self.guard["x"], self.guard["y"])) is None:
-            self.guard["visited_positions"][(self.guard["x"], self.guard["y"])] = 0
-        self.guard["visited_positions"][(self.guard["x"], self.guard["y"])] += 0
+        self.guard["visited_positions"].add((self.guard["x"], self.guard["y"]))
+        # if self.guard["visited_positions"].get((self.guard["x"], self.guard["y"])) is None:
+        #     self.guard["visited_positions"][(self.guard["x"], self.guard["y"])] = 0
+        # self.guard["visited_positions"][(self.guard["x"], self.guard["y"])] += 0
 
         # self.guard["visited_positions"].append((self.guard["x"], self.guard["y"]))
 
@@ -98,19 +104,36 @@ class Solution(BaseSolution):
             if self.check_can_leave():
                 can_leave = True
 
+    def can_move_two(self, specx, specy):
+        visited = set()
+        dir_index = 0
+        cur_loc = (self.guard["x"], self.guard["y"])
+        dirs = [(-1, 0), (0, 1), (1, 0), (0, -1)]
+
+        grid_length, grid_width = self.grid_size
+        while 0 <= cur_loc[0] < grid_length and 0 <= cur_loc[1] < grid_width:
+
+            pdir_index = dir_index
+            curx, cury = cur_loc
+
+            next_loc = (curx + dirs[dir_index][0], cury + dirs[dir_index][1])
+            while 0 <= next_loc[0] < grid_length and 0 <= next_loc[1] < grid_width and (self.grid[next_loc[0]][next_loc[1]] == "#" or next_loc == (specx, specy)):
+                dir_index = (dir_index + 1) % 4
+                next_loc = (curx + dirs[dir_index][0], cury + dirs[dir_index][1])
+            self.guard["visited_positions"].add((cur_loc, pdir_index))
+            cur_loc = next_loc
+            if (next_loc, dir_index) in self.guard["visited_positions"]:
+                return True
+        return False
+
     def find_loop_positions(self):
-        loop_positions = set()
-        for y in range(len(self.grid)):
-            for x in range(len(self.grid[0])):
-                if self.grid[y][x] == "." and (x, y) != (self.guard["x"], self.guard["y"]):
-                    original_grid = [row[:] for row in self.grid]
-                    self.grid[y][x] = "#"
-                    self.guard["visited_positions"] = {}
-                    self.move_on_ice_riddle()
-                    if len(self.guard["visited_positions"]) < len(original_grid) * len(original_grid[0]):
-                        loop_positions.add((x, y))
-                    self.grid = original_grid
-        return loop_positions
+        result = 0
+        for i in range(len(self.grid)):
+            for j in range(len(self.grid[i])):
+                if self.grid[i][j] != ".":
+                    b = self.can_move_two(i, j)
+                    result += int(b)
+        return result
 
     @timer
     def solve_test(self):
@@ -118,17 +141,16 @@ class Solution(BaseSolution):
         self.move_on_ice_riddle()
         self.answer_test = len(self.guard["visited_positions"])
 
-    @timer
+    @timer  # 4711
     def solve_one(self):
         self.load_map()
         self.move_on_ice_riddle()
         self.answer_one = len(self.guard["visited_positions"])
 
-    @timer
+    @timer  # 1562
     def solve_two(self):
         self.load_map()
-        loop_positions = self.find_loop_positions()
-    #     self.answer_two = len(loop_positions)
+        self.answer_two = self.find_loop_positions()
 
 
 if __name__ == "__main__":
