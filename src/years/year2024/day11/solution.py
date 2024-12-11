@@ -41,7 +41,6 @@ class Solution(BaseSolution):
                 self.stones.insert(last_added_id, int(half_right))
             else:
                 self.stones[i] = stone * 2024
-        print(self.stones)
 
     @timer
     def solve_test(self):
@@ -55,11 +54,16 @@ class Solution(BaseSolution):
         self.generate_stones()
         for _ in range(25):
             self.check_stone_line()
+            print(f"{_} / 25 finished")
         self.answer_one = len(self.stones)
 
     @timer
     def solve_two(self):
-        self.answer_two = 0
+        self.generate_stones()
+        for _ in range(75):
+            self.check_stone_line()
+            print(f"{_} / 75 finished | Stones: {len(self.stones)}")
+        self.answer_two = len(self.stones)
 
 
 if __name__ == "__main__":
